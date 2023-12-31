@@ -15,7 +15,7 @@ const App = () => {
       
       <NewArrivalsSection items={SHOE_LIST} />
       <Sidebar isOpen={isSidebarOpen} onclose={() => setIsSidebarOpen(false) }>
-        
+        <h2 className="mb-10 font-bold text-2xl">Cart </h2>
       </Sidebar>
     </section>
   )

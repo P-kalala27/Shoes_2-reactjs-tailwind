@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-const Sidebar = ({Children,isOpen, onclose}) => {
+const Sidebar = ({isOpen, onclose}) => {
   return (
    <div>
      <div className={` p-5 fixed top-0 right-0 bg-white h-full w-full
@@ -11,7 +11,6 @@ const Sidebar = ({Children,isOpen, onclose}) => {
         >x
         </button>
     </div>
-    {Children}
     {isOpen && (<div className="fixed left-0 top-0 bg-black opacity-50 h-full w-full z-20" />)}
    </div>
   )
