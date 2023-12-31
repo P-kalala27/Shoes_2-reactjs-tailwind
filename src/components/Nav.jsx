@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import { FiShoppingCart } from "react-icons/fi";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -5,7 +6,7 @@ import { headerLogo } from "../assets";
 
 const MENU = ["Home", "About", "Service", "Pricing", "Contact"]
 
-const Nav = () => {
+const Nav = ({onClickShoppingBtn}) => {
     // state for mobile
     const [isOpen, setIsOpen] = useState(false)
 
@@ -35,7 +36,7 @@ const Nav = () => {
             </ul>
         </div>
         {/* card icon  */}
-        <div className=" btn-press fixed left-4 bottom-4 lg:static lg:mr-8">
+        <div onClick={onClickShoppingBtn} className=" btn-press fixed left-4 bottom-4 lg:static lg:mr-8">
         <div className="flex-center h-12 w-12 bg-white shadow-sm rounded-full cursor-pointer">
          <FiShoppingCart />
         </div>
