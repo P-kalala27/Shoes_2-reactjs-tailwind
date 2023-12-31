@@ -15,7 +15,7 @@ const App = () => {
       
       <NewArrivalsSection items={SHOE_LIST} />
       <Sidebar isOpen={isSidebarOpen} onclose={() => setIsSidebarOpen(false) }>
-        hi
+        
       </Sidebar>
     </section>
   )
