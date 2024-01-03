@@ -15,7 +15,9 @@ const Nav = ({onClickShoppingBtn}) => {
         {/* logo */}
         <a href="/"> <img src={headerLogo} alt="logo"
         width={80}
-        height={80}/>
+        height={80}
+        className="dark:fill-white"
+        />
         </a>
         {/* burger button for mobile */}
         <button onClick={()=>setIsOpen(!isOpen)} className="p-2 focus:ring-2 focus:ring-gray-200

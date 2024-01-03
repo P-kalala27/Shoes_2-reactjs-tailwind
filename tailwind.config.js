@@ -2,9 +2,18 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
+    
   ],
+  darkMode: "class",
   theme: {
     extend: {
+      colors:{
+        night:{
+          DEFAULT: "#OD1120",
+          50: "#171e2c",
+          500: "#0d1120"
+        }
+      },
       // creating own keyframes with name and how it's must be executed
       keyframes: {
         wiggle: {

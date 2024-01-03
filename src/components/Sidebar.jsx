@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
-const Sidebar = ({isOpen, onclose}) => {
+const Sidebar = ({children ,isOpen, onclose}) => {
   return (
    <div>
-     <div className={` p-5 fixed top-0 right-0 bg-white h-full w-full
+     <div className={` overflow-y-auto p-5 fixed top-0 right-0 bg-white h-full w-full
      transition transform duration-300 z-50
       md:w-[50%] lg:w-[35%] shadow-sm
      ${isOpen ? "translate-x-0" : "translate-x-full"}`}>
@@ -10,6 +10,7 @@ const Sidebar = ({isOpen, onclose}) => {
         font-bold text-black text-3xl"
         >x
         </button>
+        {children}
     </div>
     {isOpen && (<div className="fixed left-0 top-0 bg-black opacity-50 h-full w-full z-20" />)}
    </div>
